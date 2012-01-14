@@ -1,6 +1,3 @@
-Cmdline
-=====
-
 A simple command line arguments parser.
 ----
 
