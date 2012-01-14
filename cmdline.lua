@@ -12,9 +12,9 @@ local Table = require('table')
 -- Strings after separate '--' go to arguments verbatim.
 
 -- E.g.
--- process.parse_flags({'foo', '--bool', '--bar=bar', '--baz=baz1', '--baz=baz2', '--baz=baz2'})
+-- process.parse_argv({'foo', '--bool', '--bar=bar', '--baz=baz1', '--baz=baz2', '--baz=baz2'})
 -- { bar = 'bar', baz = { 'baz1', 'baz2', 'baz1' }, bool = true }, { 'foo' }
--- process.parse_flags({'foo', '--bool', '--bar=bar', '--', '--baz=baz1', '--baz=baz2', '--baz=baz2'})
+-- process.parse_argv({'foo', '--bool', '--bar=bar', '--', '--baz=baz1', '--baz=baz2', '--baz=baz2'})
 -- { bar = 'bar', baz = { 'baz1', 'baz2', 'baz1' }, bool = true }, { 'foo' }
 
 function process.parse_argv(argv)
