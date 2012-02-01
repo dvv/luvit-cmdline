@@ -25,4 +25,4 @@ process.parse_argv({'foo', '--bool', '--bar=bar', '--', '--baz=baz1', '--baz=baz
 License
 ----
 
-[MIT](cmdline/license.txt)
+[MIT](luvit-cmdline/license.txt)
